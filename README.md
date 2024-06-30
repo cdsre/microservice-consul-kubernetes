@@ -44,7 +44,7 @@ traffic between the microservices and finally how we can observe the microservic
 * [Observability](observability/README.md) - How to observe the microservices using consul connect.
 
 ## Transparent Proxy
-By default, the Consul service mesh runs in 
+By default, the Consul service mesh on kubernetes runs in 
 [transparent proxy mode](https://developer.hashicorp.com/consul/docs/k8s/connect/transparent-proxy). This mode forces 
 inbound and outbound traffic through the sidecar proxy even though the service binds to all interfaces. Transparent 
 proxy infers the location of upstream services using Consul service intentions, and also allows you to use Kubernetes 
